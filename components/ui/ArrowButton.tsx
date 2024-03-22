@@ -14,14 +14,14 @@ const ArrowButton = ({
   const variantClass = variant == "primary" ? "btn-primary" : "btn-accent";
   return (
     <button
-      className={`btn ${variantClass} text-lg font-medium group max-w-[230px] whitespace-nowrap ${className} `}
+      className={`btn ${variantClass} text-lg font-[600] group max-w-[230px] whitespace-nowrap ${className} `}
     >
       {text}{" "}
       <RiArrowRightLine
         size={24}
         className={`text-2xl transition group-hover:${
           variant == "primary" ? "text-accent" : "text-primary"
-        } duration-300`}
+        }`}
       />
     </button>
   );

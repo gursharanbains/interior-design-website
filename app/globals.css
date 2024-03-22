@@ -13,10 +13,6 @@
     @apply font-secondary text-secondary text-[1.4rem] leading-[1.5rem] bg-gray-100;
   }
 
-  main {
-    @apply max-w-[1920px] mx-auto overflow-hidden;
-  }
-
   h1,
   h2,
   h3,
@@ -71,6 +67,12 @@
   .padding-header {
     @apply px-6 py-4;
   }
+
+  @media (min-width: 1195px) {
+    .container {
+      max-width: 1195px;
+    }
+  }
 }
 
 @layer components {
@@ -91,6 +93,14 @@
   }
 
   .icon {
-    @apply flex justify-center items-center rounded-full cursor-pointer transition-all;
+    @apply text-primary rounded-full cursor-pointer transition-all;
+  }
+
+  .section-title {
+    @apply text-4xl;
+  }
+
+  .section-subtitle {
+    @apply text-[20px] leading-relaxed font-extralight lg:max-w-[60%];
   }
 }

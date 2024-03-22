@@ -33,7 +33,7 @@ const Testimonial = ({
 }: ITestimonialProps) => {
   return (
     <div className="bg-white rounded-3xl px-6 py-10 flex flex-col gap-4">
-      <div className="flex gap-4">
+      <div className="flex flex-col items-center sm:flex-row gap-4">
         <Image src={avatarHref} width={50} height={50} alt="avatar" />
         <div className="flex flex-col gap-2">
           <h4>{name}</h4>
@@ -42,7 +42,9 @@ const Testimonial = ({
           </p>
         </div>
       </div>
-      <p className="text-sm font-light text-left">{description}</p>
+      <p className="text-sm font-light text-center sm:text-left">
+        {description}
+      </p>
     </div>
   );
 };

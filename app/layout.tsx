@@ -6,6 +6,7 @@ import { Jost } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import Copyright from "@/components/Copyright";
 
 const DmSerifDisplayFont = DM_Serif_Display({
   subsets: ["latin"],
@@ -34,6 +35,7 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+        <Copyright />
       </body>
     </html>
   );

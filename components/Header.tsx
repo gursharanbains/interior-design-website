@@ -9,19 +9,21 @@ const Header = () => {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
 
   return (
-    <nav className="section-container padding-header sticky top-0 z-30 bg-gray-100 xl:rounded-full">
-      <div className="flex-between">
-        <Image src="assets/logo.svg" width={170} height={70} alt="logo" />
-        <div
-          className="lg:hidden rounded-lg bg-accent text-white group hover:bg-primary w-8 h-8 flex justify-center items-center cursor-pointer"
-          onClick={() => setMobileNavOpen(!mobileNavOpen)}
-        >
-          <RiMenuLine size={12} />
+    <div className="w-full xl:max-w-4xl mx-auto bg-transparent">
+      <nav className="padding-header sticky top-0 z-30 bg-gray-100 xl:rounded-full">
+        <div className="flex-between">
+          <Image src="assets/logo.svg" width={170} height={70} alt="logo" />
+          <div
+            className="lg:hidden rounded-lg bg-accent text-white group hover:bg-primary w-8 h-8 flex justify-center items-center cursor-pointer"
+            onClick={() => setMobileNavOpen(!mobileNavOpen)}
+          >
+            <RiMenuLine size={12} />
+          </div>
+          {mobileNavOpen && <MobileNav />}
+          <Nav />
         </div>
-        {mobileNavOpen && <MobileNav />}
-        <Nav />
-      </div>
-    </nav>
+      </nav>
+    </div>
   );
 };
 

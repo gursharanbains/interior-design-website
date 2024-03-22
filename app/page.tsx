@@ -3,6 +3,7 @@ import Connect from "@/components/Connect";
 import GetEstimate from "@/components/GetEstimate";
 import Hero from "@/components/Hero";
 import Projects from "@/components/Projects";
+import RecentBlogs from "@/components/RecentBlogs";
 import Services from "@/components/Services";
 import Stats from "@/components/Stats";
 import Testimonials from "@/components/Testimonials";
@@ -18,6 +19,7 @@ export default function Home() {
       <Brands />
       <Projects />
       <Stats />
+      <RecentBlogs />
       <Connect />
     </main>
   );

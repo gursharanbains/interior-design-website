@@ -8,12 +8,13 @@ const Brands = () => {
         {brandData.map((brand, idx) => {
           const { logoHref } = brand;
           return (
-            <div className="flex items-center justify-center p-6">
+            <div className="flex items-center justify-center p-6" key={idx}>
               <Image
                 src={logoHref}
                 alt="brand logo"
                 width={150}
                 height={100}
+                className="w-[120px] lg:w-[150px]"
                 key={idx}
               />
             </div>

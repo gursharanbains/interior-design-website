@@ -7,8 +7,8 @@ const Projects = () => {
     <div className="section-container padding-container">
       <div className="flex flex-col gap-6 items-center">
         <div className="flex flex-col gap-4 text-center items-center">
-          <h2 className="text-4xl">Recent Projects</h2>
-          <p className="text-[20px] leading-relaxed font-extralight lg:max-w-[60%]">
+          <h2 className="section-title">Recent Projects</h2>
+          <p className="section-subtitle">
             With tools to make every part of your process more human and a
             suppor team excited to help you, getting started with us has never
             been easier.

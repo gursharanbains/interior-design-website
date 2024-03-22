@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Services = () => {
   return (
-    <div className="section-container padding-container mt-6">
+    <div className="section-container padding-container lg:mt-6">
       <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 xl:gap-10 transition-all duration-300">
         {servicesData.map((service, idx) => (
           <Service key={idx} {...service} />
